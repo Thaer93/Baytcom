@@ -1,0 +1,8 @@
+
+//Important codes:
+
+// js code to scroll by spicific amount to make the elements within the viewport
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			int scrollAmount = 180; // Adjust the value as needed
+			String scrollScript = String.format("window.scrollBy(0, %d);", scrollAmount);
+			js.executeScript(scrollScript);
